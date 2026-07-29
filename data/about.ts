@@ -1,3 +1,6 @@
+import { certificatesData } from "./certificates";
+import { projectsData } from "./projects";
+
 export interface SocialLink {
   name: string;
   url: string;
@@ -52,9 +55,9 @@ export const aboutData: AboutData = {
   detailedBio: "Saya memiliki latar belakang kelistrikan dan Teknik Informatika dengan keahlian lintas disiplin dari software hingga hardware. Berpengalaman membangun aplikasi Web & Mobile modern, model Machine Learning, integrasi API, manajemen database terdistribusi, hingga perancangan skema hardware (KiCAD, Fusion 360, Inventor).",
   stats: [
     { label: "Years Experience", value: "2+" },
-    { label: "Projects Completed", value: "10+" },
+    { label: "Projects Completed", value: `${projectsData.length}` },
     { label: "Happy Clients", value: "18+" },
-    { label: "Certifications", value: "5" },
+    { label: "Certifications", value: `${certificatesData.length}` },
   ],
   socials: [
     {
