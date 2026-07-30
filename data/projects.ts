@@ -4,7 +4,7 @@ export interface Project {
   slug: string;
   description: string;
   longDescription: string;
-  category: "Full Stack" | "Frontend" | "Mobile & AI" | "UI/UX Design" | "Machine Learning & Mobile" | "Machine Learning & Frontend" | "IoT & Mobile" | "Machine Learning & IoT" | "Web";
+  category: "Full Stack" | "Full Stack & ML" | "Mobile & AI" | "UI/UX Design" | "Machine Learning & Mobile" | "Machine Learning & Frontend" | "IoT & Mobile" | "Machine Learning & IoT" | "Web";
   image: string;
   tags: string[];
   liveUrl?: string;
@@ -78,4 +78,17 @@ export const projectsData: Project[] = [
     githubUrl: "https://github.com/royarsitobatubara/web_penjualan.git",
     featured: false,
   },
+  {
+    id: "proj-6",
+    title: "Diabetes Prediction System",
+    slug: "diabetes-prediction-ml",
+    description: "Sistem skrining medis berbasis Machine Learning untuk memprediksi risiko diabetes menggunakan Gaussian Process Classifier dan REST API FastAPI.",
+    longDescription: "Aplikasi full-stack skrining risiko diabetes yang dibangun untuk mengoptimalkan deteksi dini penyakit medis. Proyek ini menggabungkan model Machine Learning Gaussian Process Classifier (GPC) yang dilatih menggunakan teknik SMOTE dan preprocessing steril (StandardScaler + OneHotEncoder) untuk mencegah data leakage. Model dikalibrasi dengan custom decision threshold (0.30) untuk mengejar Recall hingga 92%, meminimalkan risiko False Negative pada kasus kesehatan. Backend API dibangun menggunakan FastAPI dengan arsitektur asynchronous dan terintegrasi langsung dengan antarmuka web interaktif.",
+    category: "Full Stack & ML",
+    image: "/images/projects/diabete-prediction.webp",
+    tags: ["TypeScript", "Python", "FastAPI", "React", "Scikit-Learn", "Machine Learning"],
+    liveUrl: "",
+    githubUrl: "https://github.com/royarsitobatubara/diabetes_predict-ML.git",
+    featured: false,
+  }
 ];
